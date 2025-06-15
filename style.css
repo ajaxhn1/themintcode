@@ -71,3 +71,20 @@ button {
 button:hover {
   background-color: #C83931;
 }
+
+/* -------------- */
+/* Hero Section  */
+/* ------------- */
+
+herosection{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.heroimage{ 
+  width: 90%;
+  max-width: 15rem;
+  margin-top: 2rem;
+}
