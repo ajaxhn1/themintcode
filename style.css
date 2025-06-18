@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 
 :root {
-  --primary-color: #ce3b33;
+  --primary-color: #c0221f;
   --secondary-color: #fffbef;
 
 html {
@@ -13,6 +13,10 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body{
   background-color: #fffbef;
 }
 
@@ -36,6 +40,15 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 5px 5%;
+}
+.heading{
+  font-size: 1.2rem;
+  opacity: 70%;
+}
+
+.webtext{
+  text-decoration: underline;
+  color: #941c1a;
 }
 
 .logo {
@@ -61,7 +74,7 @@ header {
 button {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: #e74138;
+  background-color: #d72724;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -69,14 +82,21 @@ button {
 }
 
 button:hover {
-  background-color: #C83931;
+  background-color: #ee453c;
 }
+
+.pagecontent{
+  width:45%; 
+
+  margin:0 auto; 
+}
+ 
 
 /* -------------- */
 /* Hero Section  */
 /* ------------- */
 
-herosection{
+.herosection{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -87,4 +107,126 @@ herosection{
   width: 90%;
   max-width: 15rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
+
+.girl-pik {
+  border-radius: 4%;
+}
+
+.herosection p {
+  margin-bottom: 5rem; 
+  font-size: .85rem;
+}
+
+/* -------------- */
+/* Mission Section  */
+/* ------------- */
+
+
+.mission{
+  display:flex; 
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.featuredblog h1, .mission h1{
+  margin-bottom: 2rem;
+    opacity: 70%;
+   color:#941c1a;;
+}
+
+
+
+.mission p {
+  width:55%; 
+  text-align: right;
+  font-size: .8rem;
+  line-height:1.8rem;
+  margin-bottom: 4rem;
+  
+}
+
+/* -------------- */
+/* Featured blog Section  */
+/* ------------- */
+
+.bloglist li, .bloglist a {
+  color:#c0221f;
+  line-height:2rem;
+  width:70%; 
+  margin-bottom: 2rem;
+}
+
+
+.titlecards {
+  display: flex;
+}
+
+/* -------------- */
+/* About mint code  */
+/* ------------- */
+.aboutmint {
+  width: 70%;
+  margin: 8rem auto;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: #000;
+  font-size: .8rem;
+  line-height: 1.8rem;
+  border-left: 1px solid #941c1a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.aboutmint h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #941c1a;
+  opacity: 70%;
+}
+
+.aboutmint p {
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+/* -------------- */
+/* Footer styling  */
+/* ------------- */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+ background-color: #222;
+  color: #fff;
+  margin-top: 18rem;
+  font-size: 0.9rem;
+}
+.footer-links{
+   background-color: #222;
+
+}
+
+.footer-links a {
+  color: #bbb;
+   background-color: #222;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 0.5rem;
+  color: #777;
+   background-color: #222;
+}
+

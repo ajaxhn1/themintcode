@@ -1,0 +1,77 @@
+Perfect — if TheMintCode is a web development blog, then the SEO setup will focus more on educational content, tutorials, and developer tools rather than product sales.
+
+Here’s a full on-page SEO setup tailored for a web development blog homepage:
+
+✅ 1. Main H1 (Your Primary Keyword Headline)
+
+<h1>Web Development Tips, Tutorials, and Tools for Modern Developers</h1>
+✅ 2. Meta Title (SEO title for Google)
+
+TheMintCode – Web Development Blog for HTML, CSS, JavaScript Tips & Tricks
+✅ 3. Meta Description
+
+Discover practical web development tutorials, code snippets, and front-end tricks. TheMintCode is your go-to blog for building faster and smarter.
+✅ 4. Primary Keywords to Use in Page
+Use these 2–3 times naturally:
+
+web development blog
+
+HTML CSS JavaScript tutorials
+
+front-end development tips
+
+code snippets for developers
+
+learn web development fast
+
+✅ 5. Homepage Sections (with SEO-optimized H2s)
+html
+Copy
+Edit
+<h2>Latest Web Development Tutorials</h2>
+<p>From responsive design to JavaScript tricks, our tutorials help you level up quickly. Each guide is practical, tested, and beginner-friendly.</p>
+
+<h2>Handpicked Code Snippets for Front-End Projects</h2>
+<p>Save hours with reusable HTML, CSS, and JavaScript snippets crafted for performance and elegance.</p>
+
+<h2>Why Follow TheMintCode?</h2>
+<p>We write no-fluff content for developers who want results. Whether you're freelancing, building a startup, or learning to code, we’ve got your back.</p>
+✅ 6. Image SEO
+If you’re adding a hypnotic image as a hero image, optimize it:
+
+html
+Copy
+Edit
+<img src="hypnotic-girl-coding.jpg" alt="hypnotic coding girl representing focused web development" />
+✅ 7. Internal Links
+Add links to key blog categories:
+
+html
+Copy
+Edit
+<a href="/html-tutorials">HTML</a> |
+<a href="/css-snippets">CSS</a> |
+<a href="/javascript-tricks">JavaScript</a>
+✅ 8. Structured Data / Schema (Optional)
+html
+Copy
+Edit
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "TheMintCode",
+  "url": "https://themintcode.com",
+  "description": "A web development blog with HTML, CSS, and JavaScript tutorials for modern developers."
+}
+</script>
+✅ 9. Technical Tips
+Use a fast, mobile-optimized theme
+
+Use heading structure correctly (only one <h1>, then <h2>, etc.)
+
+Submit sitemap via Google Search Console
+
+Install SEO plugins like Yoast or RankMath (if on WordPress)
+
+Would you like me to write a full SEO-optimized homepage HTML template for your blog as a starting point? Or even suggest hero text that ties in with the hypnotic image and blog topic?
