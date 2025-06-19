@@ -40,6 +40,9 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 5px 5%;
+  
+
+  
 }
 .heading{
   font-size: 1.2rem;
@@ -51,10 +54,13 @@ header {
   color: #941c1a;
 }
 
-.logo {
-  cursor: pointer;
+img.logo {
   margin-right: auto;
+  width:15rem;
+  min-width: 15rem;
+  flex-shrink: 0;
 }
+
 .nav_links {
   list-style: none;
 }
@@ -101,13 +107,15 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center ;
+  border: #941c1a;
 }
 
 .heroimage{ 
-  width: 90%;
+  width: 100%;
   max-width: 15rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+
 }
 
 .girl-pik {

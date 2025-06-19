@@ -1,0 +1,34 @@
+@media (max-width: 80em) {
+  .mission p {
+    width: 90% !important;
+  }
+  .titlecards {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 60em) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem !important;
+  }
+
+  img.logo {
+    margin: 0 auto;
+    display: block;
+  }
+  .titlecards {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 35em) {
+  .herosection h3 {
+    font-size: 0.8rem !important;
+  }
+}
