@@ -29,6 +29,16 @@
 }
 @media (max-width: 35em) {
   .herosection h3 {
+    width: 20rem;
+    margin: 0 auto;
     font-size: 0.8rem !important;
+  }
+  .heroimage {
+    width: 20rem !important;
+  }
+  .herosection p {
+    width: 25rem !important;
+    font-size: 0.8rem !important;
+    margin: 0 0 0 12rem;
   }
 }
