@@ -16,6 +16,10 @@
     align-items: center;
     margin-bottom: 3rem !important;
   }
+  .aboutmint {
+    width: 100% !important;
+    margin: 5rem 0 !important;
+  }
 
   img.logo {
     margin: 0 auto;
@@ -29,16 +33,29 @@
 }
 @media (max-width: 35em) {
   .herosection h3 {
-    width: 20rem;
-    margin: 0 auto;
+    width: 14rem;
+    margin: 0 10rem 0 13rem;
     font-size: 0.8rem !important;
   }
   .heroimage {
-    width: 20rem !important;
+    width: 14rem !important;
   }
   .herosection p {
-    width: 25rem !important;
+    width: 14rem !important;
     font-size: 0.8rem !important;
-    margin: 0 0 0 12rem;
+    margin: 0 0 0 2rem;
+  }
+  .mission p {
+    width: 20rem !important;
+  }
+  .pagecontent {
+    width: 80% !important;
+  }
+  img.blogimage {
+    width: 60% !important;
+    min-width: auto !important; /* This is the KEY fix */
+  }
+  a.blogtitles {
+    font-size: 0.8rem !important;
   }
 }

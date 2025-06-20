@@ -93,7 +93,7 @@ button:hover {
 
 .pagecontent{
   width:45%; 
-
+ /* background-color: pink; */
   margin:0 auto; 
 }
  
@@ -152,6 +152,7 @@ button:hover {
   font-size: .8rem;
   line-height:1.8rem;
   margin-bottom: 4rem;
+  /* background-color: #941c1a; */
   
 }
 
