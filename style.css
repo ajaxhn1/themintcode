@@ -239,3 +239,49 @@ button:hover {
    background-color: #222;
 }
 
+
+
+/* BLOG page */
+
+.pagecontent{
+  width: 36%;
+}
+
+.pagecontent h1 {
+  margin-top: 4rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  opacity: 80%;
+  font-size: 1.8rem;
+}
+
+.pagecontent p {
+  line-height: 2rem;
+}
+
+.date {
+
+  opacity: 40%;
+  font-size: .8rem;
+}
+
+.blogimage img {
+  width: 35rem;
+  margin: 4rem 0 ;
+  border-radius: 10%;
+   box-shadow: 0 4px 12px rgba(255, 150, 150, 0.15);
+}
+
+.pagecontent h2 {
+  margin-top: 4rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  opacity: 80%;
+  font-size: 1.5rem;
+}
+.pagecontent ul {
+   margin-bottom: 2rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+    margin-left: 1.5rem;
+}
