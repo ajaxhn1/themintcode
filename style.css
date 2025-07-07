@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 :root {
   --primary-color: #c0221f;
   --secondary-color: #fffbef;
+}
 
 html {
   font-size: 62.5%;
   /* 1 rem= 10px */
 }
+
 * {
-  font-family: "Montserrat";
+  font-family: "roboto flex";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
-body{
+body {
   background-color: #fffbef;
 }
 
@@ -29,10 +32,12 @@ img {
 li,
 a,
 button {
+  font-family: "Roboto condensed";
+  /* font-family: "oswald"; */
   font-weight: 500;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(58, 58, 58) !important;
+  text-decoration: none !important;
 }
 
 header {
@@ -40,41 +45,44 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 5px 5%;
-  
-
-  
+  /* min-width: 10rem; */
+  min-height: 6rem;
+  flex-wrap: nowrap;
 }
-.heading{
-  font-size: 1.2rem;
+.heading {
+  font-size: 2.6rem;
+  font-family: "roboto flex";
   opacity: 70%;
 }
 
-.webtext{
-  text-decoration: underline;
+.webtext {
+  /* text-decoration: underline; */
+  font-family: "roboto flex";
   color: #941c1a;
 }
 
 img.logo {
   margin-right: auto;
-  width:15rem;
+  width: 22rem;
   min-width: 15rem;
   flex-shrink: 0;
 }
 
 .nav_links {
   list-style: none;
+  flex-shrink: 0;
 }
 
 .nav_links li {
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0px 12px;
 }
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
-  color: #C83931;
+  color: #c83931;
 }
 
 button {
@@ -91,85 +99,138 @@ button:hover {
   background-color: #ee453c;
 }
 
-.pagecontent{
-  width:45%; 
- /* background-color: pink; */
-  margin:0 auto; 
+.pagecontent {
+  width: 45%;
+  /* background-color: pink; */
+  margin: 0 auto;
 }
- 
 
 /* -------------- */
 /* Hero Section  */
 /* ------------- */
 
-.herosection{
+.herosection {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
   border: #941c1a;
 }
 
-.heroimage{ 
+.heroimage {
   width: 100%;
-  max-width: 15rem;
+  max-width: 28rem;
   margin-top: 2rem;
-  margin-bottom: 1rem;
-
+  margin-bottom: 2rem;
 }
 
 .girl-pik {
   border-radius: 4%;
+  width: 28rem;
 }
 
 .herosection p {
-  margin-bottom: 5rem; 
-  font-size: .85rem;
+  margin-bottom: 7rem;
+  font-size: 1.6rem;
+  color: #4d4d4d;
 }
 
 /* -------------- */
 /* Mission Section  */
 /* ------------- */
 
-
-.mission{
-  display:flex; 
+.mission {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.featuredblog h1, .mission h1{
+.featuredblog h1,
+.mission h1 {
   margin-bottom: 2rem;
-    opacity: 70%;
-   color:#941c1a;;
+  font-family: "roboto flex";
+  opacity: 70%;
+  color: #000000;
+  font-size: 3.8rem;
 }
 
-
-
 .mission p {
-  width:55%; 
+  width: 65%;
+  font-family: "merriweather";
+  color: #494949;
+  font-weight: 100;
   text-align: right;
-  font-size: .8rem;
-  line-height:1.8rem;
+  font-size: 1.9rem;
+  line-height: 3.8rem;
   margin-bottom: 4rem;
   /* background-color: #941c1a; */
-  
 }
 
 /* -------------- */
 /* Featured blog Section  */
 /* ------------- */
 
-.bloglist li, .bloglist a {
-  color:#c0221f;
-  line-height:2rem;
-  width:70%; 
-  margin-bottom: 2rem;
+.featuredblogcontainer {
+  /* height: 50rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.leftblog1 {
+  grid-row: 1/4;
+}
+.leftblog1 img {
+  opacity: 100%;
+  width: 90%;
+  margin: 3rem 0 2rem;
+  display: block;
+  border-radius: 1rem;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+.leftblog1 img:hover {
+  filter: grayscale(0%);
 }
 
+.leftblog1 .date {
+  margin-bottom: 1rem;
+}
 
-.titlecards {
+.leftblog1 p {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  font-family: "merriweather";
+  color: rgb(73, 73, 73);
+  line-height: 2.8rem;
+}
+
+.rightblog1,
+.rightblog2,
+.rightblog3 {
+  height: 100%;
+  border-bottom: 0.1px solid rgb(195, 195, 195);
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rightblog1 img,
+.rightblog2 img,
+.rightblog3 img {
+  width: 150px;
+  opacity: 100%;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.rightblog1 img:hover,
+.rightblog2 img:hover,
+.rightblog3 img:hover {
+  filter: grayscale(0%);
 }
 
 /* -------------- */
@@ -177,32 +238,28 @@ button:hover {
 /* ------------- */
 .aboutmint {
   width: 70%;
+  /* height: 60rem; */
   margin: 8rem auto;
   padding: 2rem;
   background-color: var(--secondary-color);
-  color: #000;
-  font-size: .8rem;
-  line-height: 1.8rem;
+  color: #636363;
+  font-size: 1.8rem;
+  line-height: 4rem;
   border-left: 1px solid #941c1a;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
 .aboutmint h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
-  color: #941c1a;
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  color: #851a27;
   opacity: 70%;
 }
 
 .aboutmint p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
+  font-family: "merriweather";
 }
-
-
-
-
-
-
 
 /* -------------- */
 /* Footer styling  */
@@ -211,19 +268,18 @@ button:hover {
 .site-footer {
   text-align: center;
   padding: 2rem 1rem;
- background-color: #222;
+  background-color: #222;
   color: #fff;
   margin-top: 18rem;
   font-size: 0.9rem;
 }
-.footer-links{
-   background-color: #222;
-
+.footer-links {
+  background-color: #222;
 }
 
 .footer-links a {
-  color: #bbb;
-   background-color: #222;
+  color: #bbb !important;
+  background-color: #222;
   margin: 0 0.5rem;
   text-decoration: none;
 }
@@ -236,53 +292,88 @@ button:hover {
 .footer-copy {
   margin-top: 0.5rem;
   color: #777;
-   background-color: #222;
+  background-color: #222;
 }
-
-
-
+/* -------------- */
 /* BLOG page */
+/* ------------- */
 
-.blogpagecontent{
+.blogpagecontent {
   width: 36%;
-  margin:0 auto;
+  min-width: 65rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  /* background-color: #b8b8b8; */
 }
 
 .blogpagecontent h1 {
   margin-top: 4rem;
-  font-weight: 200;
+  font-weight: 500;
   margin-bottom: 2rem;
   opacity: 80%;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
+}
+
+.blogpagecontent h3 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 .blogpagecontent p {
   line-height: 2rem;
+  font-size: 1.9rem;
+  font-family: "merriweather";
+  color: #494949;
+  line-height: 3.8rem;
+}
+
+.blogpagecontent pre {
+  color: var(--primary-color);
+  margin-top: 6rem;
+  font-size: 1.9rem;
+}
+
+.blogpagecontent blockquote {
+  margin-top: 2rem;
+  font-size: 1.9rem;
+  font-style: italic;
 }
 
 .date {
-
-  opacity: 40%;
-  font-size: .8rem;
+  opacity: 60%;
+  font-size: 1.4rem;
 }
 
 .blogpostimage img {
-  width: 35rem;
-  margin: 4rem 0 ;
-  border-radius: 10%;
-   box-shadow: 0 4px 12px rgba(255, 150, 150, 0.15);
+  width: 65rem;
+  opacity: 100%;
+  margin: 4rem 0;
+  /* border-radius: 2%; */
+  box-shadow: 0 4px 12px rgba(255, 150, 150, 0.15);
 }
 
 .blogpagecontent h2 {
   margin-top: 4rem;
-  font-weight: 200;
+  font-weight: 700;
   margin-bottom: 2rem;
   opacity: 80%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
-.blogpagecontent ul {
-   margin-bottom: 2rem;
-    margin-top: 2rem;
-    line-height: 3rem;
-    margin-left: 1.5rem;
+.blogpagecontent ul,
+.blogpagecontent ol {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 6rem;
+  margin-left: 1.5rem;
+}
+.blogpagecontent ul li {
+  font-size: 1.9rem;
+  font-family: "merriweather";
+}
+
+.blogpagecontent ol li {
+  font-size: 1.9rem;
+  font-family: "merriweather";
 }

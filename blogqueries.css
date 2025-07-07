@@ -1,0 +1,49 @@
+/* ----------------------- */
+/* -----MD for 1280px */
+/* -------------------------- */
+
+@media (max-width: 80em) {
+}
+
+/* ----------------------- */
+/* -----MD for 960px */
+/* -------------------------- */
+
+@media (max-width: 60em) {
+  .blogpostimage img {
+    width: 52rem;
+  }
+  .blogpagecontent {
+    min-width: 55rem;
+  }
+  body {
+    min-width: 45rem;
+  }
+}
+/* MD for 560 pixels */
+@media (max-width: 35em) {
+  .blogpagecontent h1 {
+    font-size: 3rem;
+  }
+  .blogpostimage,
+  .blogpostimage img {
+    width: 45rem;
+  }
+
+  .blogpagecontent p {
+    width: 45rem;
+  }
+  .blogpagecontent h1 {
+    width: 45rem;
+  }
+  .blogpagecontent h2 {
+    width: 45rem;
+  }
+
+  main.blogpagecontent {
+    width: 35rem !important;
+  }
+  .blogpagecontent ul {
+    width: 35rem;
+  }
+}
